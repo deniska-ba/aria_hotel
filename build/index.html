@@ -16,7 +16,32 @@
 	<![endif]-->
 </head>
 <body>
-	//=include templates/header.html
+	<header class="ba-header">
+		<!-- <div class="row column"> -->
+			<div class="top-bar">
+				<div class="top-bar-title">
+					<a class="ba-logo" href="index.html">
+						<img src="../assets/img/logo.png">
+					</a>
+				</div>
+				<span class="float-right" data-responsive-toggle="responsive-menu" data-hide-for="large">
+					<button class="menu-icon dark" type="button" data-toggle></button>
+				</span>
+				<div id="responsive-menu">
+					<div class="top-bar-right">
+						<ul class="ba-main-menu menu vertical large-horizontal">
+							<li class="active"><a href="index.html">HOME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="blog.html">BLOG</a></li>
+							<li><a href="services.html">SERVICES</a></li>
+							<li><a href="contacts.html">CONTATCS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</header>
+	
 	<main>
 		<section class="ba-section ba-section__welcome">
 			<div class="ba-slider-welcome">
@@ -123,8 +148,16 @@
 
 		</section>
 	</main>
-	//=include templates/footer.html
-	//=include templates/scripts.html
+	<footer class="ba-footer">
+		<div class="row column">
+	
+		</div>
+	</footer>
+	
+	<script src="assets/js/app.js"></script>
+	<script src="https://use.fontawesome.com/116770f44c.js"></script>
+	
+	
 	<div id="map" style="min-height: 400px;"></div>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCieFtjkAYReEqeN1fit_FRu5RM-iaNrYA"></script>
 </body>

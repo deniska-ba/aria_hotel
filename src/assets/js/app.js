@@ -37,13 +37,44 @@
 	$(document).foundation();
 
 	$(document).ready(function(){
-		//var $slider = $('.ba-slider');
+		var $slider = $('.ba-slider-welcome');
 
-		// $slider.slick({
-		// 	dots: true,
-		// 	infinite: false
-		// });
+		$slider.slick({
+			slide: '.ba-slider__slide-welcome',
+			dots: true,
+			arrows: false,
+			infinite: true
+		});
 	});
+
+	$(document).ready(function(){
+		var $sliderTwo = $('.ba-slider-bedrooms');
+
+		$sliderTwo.slick({
+		slide: '.ba-slider__slide-bedrooms',
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+		speed: 300,
+		centerMode: false,
+		// initialSlide: 4,
+		variableWidth: true
+		});
+	});
+
+
+
+      $(function() {
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          scrollwheel: false,
+          zoom: 8
+        });
+     });
+
 
 })(jQuery);
 
@@ -52,11 +83,86 @@
 
 
 
+	// $('.ba-container-slider').slick({
+	// 	slide: '.ba-container-slider__slide',
+	// 	prevArrow: ".ba-arrow__prev",
+	// 	nextArrow: ".ba-arrow__next",
+	// 	infinite: true,
+	// 	slidesToShow: 4,
+	// 	slidesToScroll: 1,
+	// 	dots: false,
+	// 	speed: 300,
+	// 	centerMode: true,
+	// 	initialSlide: 4,
+	// 	variableWidth: true
+	// });
 
 
 
 
 
+// ;(function(){
+// 	"use strict";
+
+// 	window.onload = function(){
+
+// 		var poltavaCoord = {lat: 49.592552, lng: 34.547128},
+// 		mapDiv = document.querySelector('.ba-map');
+
+// // Get poltava info before map init
+
+// var poltavaInfo = document.querySelector('.ba-poltava-info');
+
+// poltavaInfo = poltavaInfo.innerHTML;
+
+
+// var officeMap = new google.maps.Map(mapDiv, {
+// 	zoom: 17,
+// 	center: poltavaCoord,
+// 			// mapTypeId: google.maps.MapTypeId.HYBRID,
+// 			disableDefaultUI: true
+// 		});
+
+
+
+// var poltavaMarker = new google.maps.Marker({
+// 	position: poltavaCoord,
+// 	map: officeMap,
+// 	title: 'Poltava',
+// 	animation: google.maps.Animation.DROP,
+// 	icon: 'img/beetroot.svg'
+
+
+// });
+
+// 		// Set infowindow for poltava marker
+
+// 		var poltavaInfowindow = new google.maps.InfoWindow({
+// 			content: poltavaInfo
+// 		});
+
+// 		poltavaInfowindow.open(officeMap, poltavaMarker);
+
+// 		// center map on window resize
+
+// 		google.maps.event.addDomListener(window, "resize", function() {
+// 			var center = officeMap.getCenter();
+// 			google.maps.event.trigger(officeMap, "resize");
+// 			officeMap.setCenter(center);
+// 		});
+
+
+
+
+
+
+// 	};
+
+
+
+
+
+// })();
 
 
 

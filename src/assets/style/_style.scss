@@ -1,0 +1,104 @@
+.ba-main-menu{
+	li{
+		padding-left: 50px;
+		a{
+			font-family: $body-font-family;
+			color: $black;
+			font-weight: 700;
+			font-size: 16px;
+			text-transform: uppercase;
+
+			&:hover, &:focus{
+				color: $primary-color;
+			}
+			@include breakpoint(medium down) {
+				text-align: right;
+			}
+		}
+		@include breakpoint(small down) {
+			padding-bottom: 30px;
+		}
+	}
+}
+.top-bar {
+	@include breakpoint(medium down) {
+		padding-right: 20px;
+	}
+}
+h1, h2 {
+	text-transform: uppercase;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.ba-welcome {
+	background: #000 no-repeat 50%;
+	background-size: cover;
+	min-height: 100vh;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	&__title {
+		color: #FFF;
+		padding-top: 355px;
+		padding-bottom: 30px;
+		text-transform: uppercase;
+	}
+	p {
+		color: $white;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		background: rgba(0,0,0,.7);
+	}
+}
+.fa {
+	margin-left: 50px;
+}
+button {
+	font-family: $header-font-family;
+}
+.ba-button {
+	&__book {
+		font-size: 25px;
+		margin: 65px 0 380px;
+	}
+	&__read-more {
+		font-size: 25px;
+		margin: 65px 0 380px;
+	}
+
+}
+.ba-about {
+	padding: 300px 0 110px;
+
+	&__title {
+		margin-bottom: 40px;
+	}
+	.ba-first-letter {
+		&:first-letter {
+			// float: left;
+			font-family: $header-font-family;
+			color: $primary-color;
+			font-size: 47px;
+			margin: 0;
+
+
+		}
+	}
+}
+.ba-bedrooms {
+	&__title {
+		margin-bottom: 40px;
+		margin-top: 50px;
+	}
+}
+
+

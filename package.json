@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp"
   },
-  "author": "AlexCSS",
+  "author": "Denis",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
+    // "bootstrap-sass": "^3.3.7",
     "browser-sync": "^2.18.6",
     "foundation-sites": "^6.3.0",
     "gulp": "^3.9.1",
